@@ -5,32 +5,38 @@ import hero_image from "../public/assets/hero-image.png"
 
 import { TypeAnimation } from 'react-type-animation';
 
-  
+interface TextProps{
+  hello: string,
+  iam1: string,
+  iam2: string,
+  iam3: string,
+}
 
-export function HeroSection(){  
+
+export function HeroSection(props:TextProps){  
   return(
     <section>
-      <div className="grid grid-cols-1 sm:grid-cols-12">
+      <div className="grid grid-cols-1 sm:grid-cols-12 sm:gap-x-16">
         <div className="col-span-7 place-self-center text-center sm:text-left">
           <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold mt-14">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">{"Hello, I'm"}{" "}</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">{props.hello}{" "}</span>
             <br/>
             <TypeAnimation
               sequence={[
                 'Arthur',
                 1000,
-                'Computer Engineer Student',
+                props.iam1,
                 1000,
-                'Electronics Technician',
+                props.iam2,
                 1000,
-                'Front-end Developer',
+                props.iam3,
                 1000,
                 'Game Dev',
                 1000
               ]}
               wrapper="span"
               speed={50}
-              className="inline-block text-4xl h-[5rem] sm:text-5xl lg:text-6xl lg:h-[8rem]"
+              className="inline-block text-4xl h-[8rem] sm:text-5xl lg:text-6xl mt-3"
               repeat={Infinity}
             />
           </h1>

@@ -7,14 +7,14 @@ const LocaleSwitcher = () => {
   const changeLocale = useChangeLocale()
   const currentLocale = useCurrentLocale()
   return (
-        <select className={`hover:bg-green-50 focus:bg-green-1300 bg-green-1100 py-1 px-2 justify-center items-center text-sm focus:ring-0 focus:outline-none appearance-none rounded-full leading-tight`}  
+        <select className={`text-black hover:bg-slate-300 focus:bg-slate-100 py-1 px-3 justify-center items-center text-sm focus:ring-0 focus:outline-none appearance-none rounded-lg leading-tight`}  
                 id="userRule"  
                 placeholder={currentLocale}
                 value={currentLocale}
                 onChange={(e)=>changeLocale(e.target.value as "en" | "pt")}
                 required
                 title="Locale">
-                  <option className='rounded-full' value="en">En</option>
+                  <option value="en">En</option>
                   <option value="pt">Pt</option>
         </select>
   )

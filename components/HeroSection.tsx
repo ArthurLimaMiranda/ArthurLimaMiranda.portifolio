@@ -1,7 +1,7 @@
 'use client'
 import React from "react"
 import Image from "next/image"
-import hero_image from "../public/assets/hero-image.jpg"
+import hero_image from "../public/assets/hero-image.png"
 
 import { TypeAnimation } from 'react-type-animation';
 

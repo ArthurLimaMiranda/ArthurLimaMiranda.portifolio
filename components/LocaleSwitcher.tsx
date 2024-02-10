@@ -1,7 +1,7 @@
 'use client'
 
 import React from 'react'
-import { useChangeLocale, useCurrentLocale } from '@/locales/client'
+import { useChangeLocale, useCurrentLocale } from '../locales/client'
 
 const LocaleSwitcher = () => {
   const changeLocale = useChangeLocale()

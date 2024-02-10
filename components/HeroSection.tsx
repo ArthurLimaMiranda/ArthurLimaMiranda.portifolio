@@ -10,6 +10,9 @@ interface TextProps{
   iam1: string,
   iam2: string,
   iam3: string,
+  btn1: string,
+  btn2: string,
+  descript: string
 }
 
 
@@ -40,13 +43,13 @@ export function HeroSection(props:TextProps){
               repeat={Infinity}
             />
           </h1>
-          <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-            Nam ipsum nibh, mattis ac rhoncus et, faucibus in lorem. 
+          <p className="text-[#ADB7BE] text-base sm:text-lg lg:text-xl mb-6 text-justify">
+            {props.descript}
           </p>
+
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black">Hire me</button>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br hover:bg-slate-800 text-white border border-white mt-3">Download CV</button>
+            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black">{props.btn1}</button>
+            <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br hover:bg-slate-800 text-white border border-white mt-3">{props.btn2}</button>
           </div>
         </div>
 

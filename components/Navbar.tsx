@@ -5,22 +5,27 @@ import { NavbarLink } from "./NavbarLink"
 import LocaleSwitcher from "./LocaleSwitcher"
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid"
 
-const navLinks = [
-  {
-    title: "About",
-    href: "#about"
-  },
-  {
-    title: "Projects",
-    href: "#projects"
-  },
-  {
-    title: "Contact",
-    href: "#contato"
-  },
-]
+interface TextProps{
+  nav1: string, 
+  nav2: string, 
+  nav3: string, 
+}
 
-export function Navbar(){  
+export function Navbar(props:TextProps){  
+  const navLinks = [
+    {
+      title: props.nav1,
+      href: "#about"
+    },
+    {
+      title: props.nav2,
+      href: "#projects"
+    },
+    {
+      title: props.nav3,
+      href: "#contato"
+    },
+  ]
 
   const [navbarOpen, setNavbarOpen] = useState(false)
 

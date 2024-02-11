@@ -10,6 +10,7 @@ interface TextProps{
   iam1: string,
   iam2: string,
   iam3: string,
+  iam4: string,
   btn1: string,
   btn2: string,
   descript: string
@@ -34,7 +35,7 @@ export function HeroSection(props:TextProps){
                 1000,
                 props.iam3,
                 1000,
-                'Game Dev',
+                props.iam4,
                 1000
               ]}
               wrapper="span"

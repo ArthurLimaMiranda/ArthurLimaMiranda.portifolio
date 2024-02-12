@@ -7,7 +7,6 @@ body{
   text-rendering: optimizeLegibility;
 }
 
-/*
 *{
   -ms-overflow-style: none;
 }
@@ -18,4 +17,3 @@ body{
 nextjs-portal {
   display: none;
 }
-*/

@@ -21,7 +21,7 @@ export function ImageSwitcher(){
 
   return(
     <>
-        <Image src={images[currentIndex]} alt="About me picture" width={500} height={500}/>
+        <Image src={images[currentIndex]} alt="About me picture" width={500} height={500} className="rounded-xl"/>
     </>
   )
 }

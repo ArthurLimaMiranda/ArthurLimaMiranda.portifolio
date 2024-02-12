@@ -46,11 +46,11 @@ export function AboutSection(props:TextProps){
       title: "Education",
       id: 1,
       content: (
-        <ul className="gap-y-3 flex flex-col">
+        <ul className="gap-y-3 flex flex-col py-1">
           <li>
             <div className="flex flex-row w-full justify-between">
               <p className="font-semibold text-sm sm:text-base">{props.education[1]}</p>
-              <p className="text-xs">{" 07/22 - 12/27 (EST.)"}</p>
+              <p className="text-xs">{" 2022 - 2027 (Est.)"}</p>
             </div>
             <p className="text-sm sm:text-base">{"Universidade Federal de Pernambuco (UPE)"}</p>
           </li>
@@ -58,7 +58,7 @@ export function AboutSection(props:TextProps){
           <li>
             <div className="flex flex-row w-full justify-between">
               <p className="font-semibold text-sm sm:text-base">{props.education[2]}</p>
-              <p className="text-xs">{"02/16 - 01/20"}</p>
+              <p className="text-xs">{"2016 - 2020"}</p>
             </div>
             <p className="text-sm sm:text-base">{"Instituto Federal de Pernambuco (IFPE)"}</p>
           </li>
@@ -150,7 +150,7 @@ export function AboutSection(props:TextProps){
               {props.certification[0]}{" "}
             </TabButton>
           </div>
-          <div className={`flex flex-col ${tab===1?("justify-center"):("")}  mt-8 overflow-y-scroll h-[15rem] bg-gray-700 px-3 lg:px-6`}> {TAB_DATA.find((t) => t.id === tab)?.content} </div>
+          <div className={"flex flex-col mt-8 overflow-y-scroll h-[15rem] bg-gray-700 px-3 lg:px-6"}> {TAB_DATA.find((t) => t.id === tab)?.content} </div>
         </div>
       </div>
     </section>

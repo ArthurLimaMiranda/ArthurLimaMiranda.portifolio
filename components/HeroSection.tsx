@@ -22,7 +22,7 @@ export function HeroSection(props:TextProps){
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12 sm:gap-x-16">
         <div className="col-span-7 place-self-center text-center sm:text-left">
-          <h1 className="text-white mb-4 text-4xl sm:text-5xl lg:text-6xl font-extrabold mt-14">
+          <h1 className="text-white mb-4 text-4xl sm:text-5xl xl:text-6xl font-extrabold mt-14">
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-600">{props.hello}{" "}</span>
             <br/>
             <TypeAnimation
@@ -40,7 +40,7 @@ export function HeroSection(props:TextProps){
               ]}
               wrapper="span"
               speed={50}
-              className="inline-block text-4xl h-[8rem] sm:text-5xl lg:text-6xl mt-3"
+              className="inline-block text-4xl h-[8rem] md:h-[6rem] lg:h-[8rem] sm:text-5xl xl:text-6xl mt-3"
               repeat={Infinity}
             />
           </h1>

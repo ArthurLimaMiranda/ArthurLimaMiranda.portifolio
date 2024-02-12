@@ -28,6 +28,24 @@ export default{
             "en": "Inglês (B1)"
         },
         "skills": "Eletrônica",
-        "experience": "Experiência"
+        "certifications": {
+            "title": "Certificações",
+            "cert1": "IFPE – XVIII Semana de Ciência e Tecnologia do Instituto Federal de Pernambuco",
+            "as1": "Monitor (11/2021)",
+            "cert2": "Digital Innovation One - Conceitos e melhores práticas com bancos de dados e PostgreSQL",
+            "as2": "Aluno (01/2021)",
+            "cert3": "Digital Innovation One - Introdução a criação de websites com HTML5 e CSS3",
+            "as3": "Aluno (12/2020)",
+            "cert4": "Digital Innovation One – Projetos ágeis com SCRUM",
+            "as4": "Aluno (01/2021)",
+            "cert5": "Digital Innovation One - Introdução ao Git e ao GitHub",
+            "as5": "Aluno (12/2020)",
+            "cert6": "SHAWEE – Hackaton Getnet",
+            "as6": "Participante (11/2020)",
+            "cert7": "SHAWEE – Hackaton Natura",
+            "as7": "Participante (10/2020)",
+            "cert8": "IFPE – Mostra Nacional de Robótica 2019",
+            "as8": "Expositor (11/2019)"
+        }
     }
 } as const

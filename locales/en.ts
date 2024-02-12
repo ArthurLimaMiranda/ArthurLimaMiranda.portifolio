@@ -28,6 +28,23 @@ export default{
             "en": "English (B1)"
         },
         "skills": "Electronics",
-        "experience": "Experience"
+        "certifications": {
+            "title": "Certifications",
+            "cert1": "IFPE – XVIII Science and Technology Week of the Federal Institute of Pernambuco",
+            "cert2": "Digital Innovation One - Concepts and Best Practices with Databases and PostgreSQL",
+            "as2":"Student (01/2021)",
+            "cert3": "Digital Innovation One - Introduction to Website Creation with HTML5 and CSS3",
+            "as3":"Student (12/2020)",
+            "cert4": "Digital Innovation One – Agile Projects with SCRUM",
+            "as4":"Student (01/2021)",
+            "cert5": "Digital Innovation One - Introduction to Git and GitHub",
+            "as5": "Student (12/2020)",
+            "cert6": "SHAWEE – Getnet Hackathon",
+            "as6": "Participant (11/2020)",
+            "cert7": "SHAWEE – Natura Hackathon",
+            "as7": "Participant (10/2020)",
+            "cert8": "IFPE – National Robotics Exhibition 2019",
+            "as8": "Exhibitor (11/2019)",
+        }
     }
 } as const

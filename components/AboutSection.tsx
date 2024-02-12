@@ -7,6 +7,7 @@ interface TextProps{
   abtme: string,
   descript: string,
   education: string[],
+  certification: string[],
 }
 
 export function AboutSection(props:TextProps){  
@@ -81,45 +82,46 @@ export function AboutSection(props:TextProps){
       content: (
         <ul className="gap-y-3 flex flex-col py-1 list-disc pl-2">
           <li>
-            <p className="font-semibold">{"IFPE – XVIII Semana de Ciência e Tecnologia do Instituto Federal de Pernambuco"}</p>
+            <p className="font-semibold">{props.certification[1]}</p>
             <p className="text-sm sm:text-base">{"Monitor (11/2021)"}</p>
           </li>
 
           <li>
-            <p className="font-semibold">{"Digital Innovation One - Conceitos e melhores práticas com bancos de dados e PostgreSQL"}</p>
-            <p className="text-sm sm:text-base">{"Aluno (01/2021)"}</p>
+            <p className="font-semibold">{props.certification[2]}</p>
+            <p className="text-sm sm:text-base">{props.certification[3]}</p>
           </li>
 
           <li>
-            <p className="font-semibold">{"Digital Innovation One - Introdução a criação de websites com HTML5 e CSS3"}</p>
-            <p className="text-sm sm:text-base">{"Aluno (12/2020)"}</p>
+            <p className="font-semibold">{props.certification[4]}</p>
+            <p className="text-sm sm:text-base">{props.certification[5]}</p>
           </li>
 
 
           <li>
-            <p className="font-semibold">{"Digital Innovation One – Projetos ágeis com SCRUM"}</p>
-            <p className="text-sm sm:text-base">{"Aluno (01/2021)"}</p>
+            <p className="font-semibold">{props.certification[6]}</p>
+            <p className="text-sm sm:text-base">{props.certification[7]}</p>
           </li>
 
           <li>
-            <p className="font-semibold">{"Digital Innovation One - Introdução ao Git e ao GitHub"}</p>
-            <p className="text-sm sm:text-base">{"Aluno (12/2020)"}</p>
+            <p className="font-semibold">{props.certification[8]}</p>
+            <p className="text-sm sm:text-base">{props.certification[9]}</p>
           </li>
 
           <li>
-            <p className="font-semibold">{"SHAWEE – Hackaton Getnet"}</p>
-            <p className="text-sm sm:text-base">{"Participante (11/2020)"}</p>
+            <p className="font-semibold">{props.certification[10]}</p>
+            <p className="text-sm sm:text-base">{props.certification[11]}</p>
           </li>
 
           <li>
-            <p className="font-semibold">{"SHAWEE – Hackaton Natura"}</p>
-            <p className="text-sm sm:text-base">{"Participante (10/2020)"}</p>
+            <p className="font-semibold">{props.certification[12]}</p>
+            <p className="text-sm sm:text-base">{props.certification[13]}</p>
           </li>
 
           <li>
-            <p className="font-semibold">{"IFPE – Mostra Nacional de Robótica 2019"}</p>
-            <p className="text-sm sm:text-base">{"Expositor (11/2019)"}</p>
+            <p className="font-semibold">{props.certification[14]}</p>
+            <p className="text-sm sm:text-base">{props.certification[15]}</p>
           </li>
+
         </ul>
       )
     }
@@ -145,7 +147,7 @@ export function AboutSection(props:TextProps){
 
             <TabButton active={tab===2} selectTab={()=> handleTabChange(2)}>
               {" "}
-              {props.education[7]}{" "}
+              {props.certification[0]}{" "}
             </TabButton>
           </div>
           <div className={`flex flex-col ${tab===1?("justify-center"):("")}  mt-8 overflow-y-scroll h-[15rem] bg-gray-700 px-3 lg:px-6`}> {TAB_DATA.find((t) => t.id === tab)?.content} </div>

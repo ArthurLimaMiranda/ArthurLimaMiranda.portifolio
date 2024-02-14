@@ -3,22 +3,12 @@ import Image from "next/image";
 import React, { useEffect, useState, useRef } from "react";
 import { motion } from "framer-motion";
 
-import img01 from '../public/assets/CarrosselImg1.jpg'
-import img02 from '../public/assets/CarrosselImg2.png'
-import img03 from '../public/assets/CarrosselImg3.jpg'
-import img04 from '../public/assets/CarrosselImg4.png'
-import img05 from '../public/assets/CarrosselImg5.png'
-import img06 from '../public/assets/CarrosselImg6.png'
-import img07 from '../public/assets/CarrosselImg7.png'
-import img08 from '../public/assets/CarrosselImg8.png'
-import img09 from '../public/assets/CarrosselImg9.png'
-import img10 from '../public/assets/CarrosselImg10.png'
 
-import imgSelec01 from '../public/assets/CarrosselSelecImg1.png'
 
-const imagesCont = [img01, img02, img03, img04, img05, img06, img07, img08, img09, img10];
 
-const imagesSelec = [imgSelec01];
+const imagesCont = [""];
+
+const imagesSelec = [""];
 
 interface TextProps{
   titleArr: string[],

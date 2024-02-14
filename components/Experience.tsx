@@ -26,7 +26,7 @@ import c4 from "../public/assets/Conect4.png"
 
 import pj from "../public/assets/Justa.png"
 
-import gorillasCapa from "../public/assets/gorillas/GorillasCapa.png"
+import gorillasCapa from "../public/assets/gorillas/gorillasCapa.png"
 import gorillas1 from "../public/assets/gorillas/gorillas1.png"
 import gorillas2 from "../public/assets/gorillas/gorillas2.png"
 import gorillas3 from "../public/assets/gorillas/gorillas3.png"

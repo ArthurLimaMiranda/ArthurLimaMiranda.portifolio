@@ -19,7 +19,7 @@ export function Navbar(props:TextProps){
     },
     {
       title: props.nav2,
-      href: "#projects"
+      href: "#experience"
     },
     {
       title: props.nav3,

@@ -40,7 +40,7 @@ export function HeroSection(props:TextProps){
               ]}
               wrapper="span"
               speed={50}
-              className="inline-block text-4xl h-[8rem] md:h-[6rem] lg:h-[8rem] sm:text-5xl xl:text-6xl mt-3"
+              className="inline-block text-4xl h-[8rem] md:h-[8rem] sm:text-5xl xl:text-6xl mt-3"
               repeat={Infinity}
             />
           </h1>

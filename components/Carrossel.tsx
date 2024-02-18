@@ -41,7 +41,7 @@ export function CarrosselContinuo(props:TextProps2) {
           animate={{x:0}}
           transition={{duration:0.8}}>
           {props.imgArr.map((img, index) => (
-            <motion.div key={index} className="min-h-[200px] min-w-[200px] max-h-[200px] mx-3 relative"> 
+            <motion.div key={index} className="min-h-[200px] min-w-[200px] max-h-[200px] xl:min-h-[300px] xl:min-w-[300px] xl:max-h-[300px] mx-3 relative"> 
               <Image src={img} alt={`Carrossel Image ${index + 1}`} layout="fill" objectFit="cover" className="w-full h-auto rounded-3xl pointer-events-none"/>
             </motion.div>
           ))}

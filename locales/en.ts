@@ -49,39 +49,39 @@ export default{
     },
     "experience": {
         "synesthesia": [
-            "Aprimorei o código e o circuito eletrônico dos “óculos sensoriais” usando uma ESP32 com o Arduino IDE. Em seguida, projetei um Beacon de localização operacional nas proximidades do Centro de Pesquisa do IFPE para auxiliar os usuários dos óculos na navegação pelo local",
-            "Organizei e ministrei as Oficinas Synesthesia Vision (https://iniciacaotecnologica.com/oficinas-synesthesia-vision/) para alunos do ensino fundamental de escolas públicas em Recife, com foco em tecnologias assistivas, eletrônica, programação e modelagem 3D. Para tal, montamos  robôs educacionais baseados em Arduino, circuitos eletrônicos, modelos 3D e um manual (https://drive.google.com/file/d/1qgjVh_dKVJY5ZPUwJ3WlshXVvwGz8Tpe/view) abrangente e didático para os alunos.",
+            "Improved the code and electronic circuit of the 'sensory glasses' using an ESP32 with the Arduino IDE. Then, engineered a location beacon operational within the proximity of the IFPE’s Research Center to aid users of the sensory glasses in navigating through the Center;",
+            "Organized and conducted the Synesthesia Vision Workshops for elementary school students from public schools in Recife, focusing on assistive technologies, electronics, programming, and 3D modeling. For that objective we assembled educational Arduino-based robots, electronic circuits, 3D models, and a comprehensive and didactic manual for the students.",
         ],
         "eagles": [
-            "Participei de várias edições da RoboCup em níveis estadual e nacional",
-            "Colaborei na transição de um robô LEGO EV3 para uma combinação de Raspberry Pi 3, sensores eletrônicos, rodas de silicone e chassis e motores LEGO. Essa mudança proporcionou um melhor controle de código, aprimoramento da mobilidade do robô e a uma ampliação das possibilidades de análise a partir dos sensores"
+            "Participated in multiple editions of Brazil's RoboCup at the state and national levels;",
+            "Assisted in transitioning from a fully EV3 LEGO robot to a combination of Raspberry Pi 3, electronic sensors, silicon wheels and LEGO chassis and motors."
         ],
         "oppa": [
-            "Analisei os gastos públicos do governo federal brasileiro relacionados ao meio ambiente utilizando R e RStudio para coletar, filtrar e visualizar, por meio de gráficos, a evolução dos gastos ambientais de 2008 a 2021.",
-            ""
+            "Analyzed the environmental-related public expenditures of the Brazilian federal government;",
+            "Utilized R and RStudio to scrape, filter, and visualize the evolution of environmental expenses from 2008 to 2021 through graphics."
         ],
         "c4": [
             "Conecta 4",
-            "Programei um jogo de “Conecta 4” em Java, utilizando orientação a objetos, que pode ser jogado contra outra pessoa ou uma IA em três dificuldades diferentes",
-            "Implementei o armazenamento dos resultados das partidas em um arquivo CSV para fácil acesso"
+            "Created an Object-Oriented game of “Connect 4” using Java that can be played against either another person or an AI in three different modes;",
+            "Implemented a feature to store match results in a CSV file for easier access."
         ],
         "pj": [
             "Projeto justa",
-            "Desenvolvemos uma aplicação web responsiva que simula o uso do “Banco Justa” como um banco de autogerenciamento para empreendedores",
-            "Projetei um servidor JSON, que utiliza protocolos HTTP, para armazenar e acessar as despesas dos usuários"
+            "Developed a responsive web application that simulates the usage of the 'Justa Bank' as a self-management entrepreneurs' bank;",
+            "Designed a JSON server and HTTP protocols to store and access users' expenses."
         ],
         "gorillas": [
-            "Construí uma versão em Python do jogo “QBasic Gorillas” utilizando a biblioteca curses. Depois, o converti para a linguagem C.",
-            ""
+            "Programmed a python version of the “QBasic Gorillas” game utilizing the curses library;",
+            "Converted the game to the C language."
         ],
         "retif": [
             "Projeto retificador",
-            "Montei um módulo didático para um retificador trifásico de meia onda microcontrolado, utilizando o microcontrolador 8051",
-            "Implementei a opção de definir parâmetros de tensão como Valores Médio e Eficaz, inseridos por meio de um Teclado Matricial e exibidos em um Display LCD. Incorporei opções de disparo, incluindo modos de trens de pulsos ou pulso único, com ajuste de largura de pulso"
+            "Constructed a didactic module for a microcontroller-based three-phase half-wave rectifier using the 8051 microcontroller;",
+            "Implemented the option to set voltage parameters as Average and Effective Values, input via a Matrix Keyboard, and displayed on an LCD Display ans incorporated features for triggering, including pulse train or single pulse modes, with adjustable pulse width settings"
         ],
         "qa": [
-            "Desenvolvi um aplicativo em Java Swing para gerar e gerenciar o horário das aulas dos professores do IFPE durante a semana",
-            "Armazenei os arquivos das aulas de cada professor em um arquivo CSV"
+            "Developed a Java Swing app to generate and manage the IFPE teacher’s classes schedule during the week;",
+            "Stored the classes’ files of each teacher on a CSV file."
         ],
     },
 } as const

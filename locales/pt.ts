@@ -50,8 +50,8 @@ export default{
     },
     "experience": {
         "synesthesia": [
-            "Aprimorei o código e o circuito eletrônico dos “óculos sensoriais” usando uma ESP32 com o Arduino IDE. Em seguida, projetei um Beacon de localização operacional nas proximidades do Centro de Pesquisa do IFPE para auxiliar os usuários dos óculos na navegação pelo local",
-            "Organizei e ministrei as Oficinas Synesthesia Vision (https://iniciacaotecnologica.com/oficinas-synesthesia-vision/) para alunos do ensino fundamental de escolas públicas em Recife, com foco em tecnologias assistivas, eletrônica, programação e modelagem 3D. Para tal, montamos  robôs educacionais baseados em Arduino, circuitos eletrônicos, modelos 3D e um manual (https://drive.google.com/file/d/1qgjVh_dKVJY5ZPUwJ3WlshXVvwGz8Tpe/view) abrangente e didático para os alunos.",
+            "Aprimorei o código e o circuito eletrônico dos “óculos sensoriais” usando uma ESP32 com o Arduino IDE. Em seguida, projetei um Beacon de localização operacional nas proximidades do Centro de Pesquisa do IFPE para auxiliar os usuários dos óculos na navegação pelo local;",
+            "Organizei e ministrei as Oficinas Synesthesia Vision para alunos do ensino fundamental de escolas públicas em Recife, com foco em tecnologias assistivas, eletrônica, programação e modelagem 3D. Para tal, montamos  robôs educacionais baseados em Arduino, circuitos eletrônicos, modelos 3D e um manual abrangente e didático para os alunos.",
         ],
         "eagles": [
             "Participei de várias edições da RoboCup em níveis estadual e nacional",

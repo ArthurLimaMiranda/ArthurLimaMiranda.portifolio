@@ -128,7 +128,7 @@ export function AboutSection(props:TextProps){
   ]
 
   return(
-    <section className="text-white mt-8 md:mt-32 xl:mt-36 2xl:mt-56">
+    <section className="text-white mt-8 md:mt-32 xl:mt-36 2xl:mt-56" id="about">
       <div className="md:grid md:grid-cols-2 gap-8 py-8 xl:gap-16 sm:py-16 items-start lg:items-center">
         <ImageSwitcher/>
         <div className="mt-10 sm:mt-4 md:mt-0 flex flex-col h-full">

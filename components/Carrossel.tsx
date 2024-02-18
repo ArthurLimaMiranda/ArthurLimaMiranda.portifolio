@@ -14,7 +14,11 @@ interface TextProps{
   titleArr: string[],
   textArr: string[],
 }
-export function CarrosselContinuo() {
+
+interface TextProps2{
+  imgArr: string[],
+}
+export function CarrosselContinuo(props:TextProps2) {
 
   const carrossel = useRef<HTMLDivElement>(null);
   const [width, setWidth] = useState(0)
@@ -27,7 +31,7 @@ export function CarrosselContinuo() {
   
 
   return (
-    <div className="bg-green-1300 w-full flex items-center justify-center py-[4.5rem] px-14 min-h-full">
+    <div className=" flex items-center justify-center rounded-xl">
       <motion.div className="cursor-grab overflow-hidden rounded-md" whileTap={{cursor:"grabbing"}} ref={carrossel}>
         <motion.div 
           className="flex" 
@@ -36,8 +40,8 @@ export function CarrosselContinuo() {
           initial={{x:50}}
           animate={{x:0}}
           transition={{duration:0.8}}>
-          {imagesCont.map((img, index) => (
-            <motion.div key={index} className="min-h-[400px] min-w-[400px] max-h-[400px] mx-3 relative"> 
+          {props.imgArr.map((img, index) => (
+            <motion.div key={index} className="min-h-[200px] min-w-[200px] max-h-[200px] mx-3 relative"> 
               <Image src={img} alt={`Carrossel Image ${index + 1}`} layout="fill" objectFit="cover" className="w-full h-auto rounded-3xl pointer-events-none"/>
             </motion.div>
           ))}

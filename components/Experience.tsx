@@ -1,4 +1,3 @@
-import Link from "next/link"
 import React from "react"
 import { getScopedI18n } from "../locales/server";
 
@@ -52,9 +51,11 @@ export async function Experience(props:TextProps){
       id: 1,
       title: "Synesthesia Vision (2016-2019)",
       description: [experience('synesthesia.0'), experience('synesthesia.1')],
-      image: [sVCapa.src, sVW1.src, sVW2.src, sVW3.src, sVW4.src, sVW4.src, sVW6.src, sV1.src, sV2.src],
+      image: [sVCapa.src, sVW1.src, sVW2.src, sVW3.src, sVW4.src, sVW5.src, sVW6.src, sV1.src, sV2.src],
       hasCart: true,
       tag: ["All", "Electronics", "Robotics"],
+      hasLink: true,
+      projLink: "https://synesthesiavision.com"
     },
     {
       id: 2,
@@ -63,6 +64,8 @@ export async function Experience(props:TextProps){
       image: [eaglesCapa.src, obr1.src, obr2.src, obr3.src, obr4.src, obr5.src, obr6.src],
       hasCart: true,
       tag: ["All", "Robotics"],
+      hasLink: false,
+      projLink: ""
     },
     {
       id: 3,
@@ -71,6 +74,8 @@ export async function Experience(props:TextProps){
       image: [c4.src],
       hasCart: false,
       tag: ["All", "Game Dev", "Java"],
+      hasLink: true,
+      projLink: "https://github.com/ArthurLimaMiranda/Ligue-4"
     },
     {
       id: 4,
@@ -79,6 +84,8 @@ export async function Experience(props:TextProps){
       image: [pj.src],
       hasCart: false,
       tag: ["All", "Web"],
+      hasLink: true,
+      projLink: "https://github.com/ArthurLimaMiranda/Projeto_Justo"
     },
     {
       id: 5,
@@ -87,6 +94,8 @@ export async function Experience(props:TextProps){
       image: [gorillasCapa.src, gorillas1.src, gorillas2.src, gorillas3.src],
       hasCart: true,
       tag: ["All", "Game Dev"],
+      hasLink: true,
+      projLink: "https://github.com/ArthurLimaMiranda/Gorillas-UPE.c"
     },
     {
       id: 6,
@@ -95,6 +104,8 @@ export async function Experience(props:TextProps){
       image: [retifCapa.src, retif1.src, retif2.src, retif3.src, retif4.src,],
       hasCart: true,
       tag: ["All", "Electronics"],
+      hasLink: true,
+      projLink: "https://github.com/ArthurLimaMiranda/ProjetoRetificador"
     },
     {
       id: 7,
@@ -103,6 +114,8 @@ export async function Experience(props:TextProps){
       image: [qa.src],
       hasCart: false,
       tag: ["All", "Java"],
+      hasLink: true,
+      projLink: "https://github.com/ArthurLimaMiranda/ProjetoClassesManagement"
     },
     {
       id: 8,
@@ -111,13 +124,15 @@ export async function Experience(props:TextProps){
       image: [oppa.src],
       hasCart: false,
       tag: ["All", "Data analysis"],
+      hasLink: true,
+      projLink: "https://github.com/ArthurLimaMiranda/OPPA"
     }
 
   ]  
   return(
-    <div className="md:mt-24">
+    <div className="mt-10 md:mt-24" id="experience">
       <h2 className="text-center text-4xl font-bold text-white mt-4 mb-8 md:mb-12">Projects and Activities</h2>
-      <div className="grid md:grid-cols-3 gap-8 md:gap-12">
+      <div className="mt-10 grid md:grid-cols-3 gap-8 md:gap-12">
         {experienceData.map((experience) => 
           <ExperienceCard 
           key={experience.id} 
@@ -125,7 +140,9 @@ export async function Experience(props:TextProps){
           hasCart={experience.hasCart} 
           imgCartUrl={experience.image} 
           title={experience.title}
-          tags={experience.tag}/>)}
+          tags={experience.tag}
+          hasLink={experience.hasLink}
+          projLink={experience.projLink}/>)}
       </div>
     </div>
   )

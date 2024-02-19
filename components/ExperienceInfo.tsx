@@ -63,10 +63,10 @@ export function ExperienceInfo(props: TextProps) {
                 <li>{props.description[1]}</li>
               </ul>
 
-              <div className="hidden xl:flex flex-col h-full items-center justify-between">
-                <p className="font-semibold text-center text-3xl text-white">{props.title}</p>
+              <div className={`hidden xl:flex ${props.hasCart?('w-[55%]'):('w-full')} flex-col h-full items-center justify-between`}>
+                <p className="font-semibold text-center text-4xl text-white">{props.title}</p>
 
-                <ul className="flex flex-col w-[90%] h-[40%] xl:justify-center overflow-y-scroll list-disc bg-gray-700 rounded-xl text-base font-normal text-left pl-8 pr-5 gap-y-5 py-5 text-white">
+                <ul className="flex flex-col w-[90%] h-[60%] overflow-y-scroll list-disc bg-gray-700 rounded-xl text-base font-normal text-left pl-8 pr-5 gap-y-5 py-5 text-white">
                   <li>{props.description[0]}</li>
                   <li>{props.description[1]}</li>
                 </ul>
@@ -80,7 +80,7 @@ export function ExperienceInfo(props: TextProps) {
               </div>
               
               {props.hasCart&&
-                <div className="px-3 overflow-x-hidden w-full">
+                <div className="px-3 overflow-x-hidden w-full xl:w-[45%]">
                   <CarrosselContinuo imgArr={props.imgCartUrl}/>
                 </div>
               }

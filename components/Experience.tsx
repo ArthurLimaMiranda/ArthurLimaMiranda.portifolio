@@ -49,7 +49,7 @@ export async function Experience(props:TextProps){
   const experienceData = [
     {
       id: 1,
-      title: "Synesthesia Vision (2016-2019)",
+      title: "Synesthesia Vision (2016-2022)",
       description: [experience('synesthesia.0'), experience('synesthesia.1')],
       image: [sVCapa.src, sVW1.src, sVW2.src, sVW3.src, sVW4.src, sVW5.src, sVW6.src, sV1.src, sV2.src],
       hasCart: true,

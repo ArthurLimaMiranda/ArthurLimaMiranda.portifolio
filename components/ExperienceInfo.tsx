@@ -53,7 +53,7 @@ export function ExperienceInfo(props: TextProps) {
           <div className="flex items-center justify-center min-h-screen fixed inset-0 z-50">
             <div
               ref={modalRef}
-              className={`flex flex-col xl:flex-row gap-y-5 py-10 text-center bg-[#121212] rounded-2xl ${props.hasCart?('h-[90%] w-[80%] xl:w-[60%] xl:h-[70%]'):('h-[50%] w-[80%] xl:w-[40%] xl:h-[60%]')} md:px-5 items-center justify-between`}
+              className={`flex flex-col xl:flex-row gap-y-5 py-10 text-center bg-[#121212] rounded-2xl ${props.hasCart?('h-[90%] w-[80%] xl:w-[60%] xl:h-[70%]'):('h-[60%] w-[80%] xl:w-[40%] xl:h-[60%]')} md:px-5 items-center justify-between`}
             >
 
               <p className="xl:hidden font-semibold text-center text-3xl text-white">{props.title}</p>

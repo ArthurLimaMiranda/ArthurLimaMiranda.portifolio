@@ -1,4 +1,5 @@
 import { AboutSection } from "../../../components/AboutSection";
+import { Contact } from "../../../components/Contact";
 import { Experience } from "../../../components/Experience";
 import { HeroSection } from "../../../components/HeroSection";
 import { Navbar } from "../../../components/Navbar";
@@ -41,6 +42,7 @@ async function Home() {
           <HeroSection hello={hero('hello')} iam1={hero('iam1')} iam2={hero('iam2')} iam3={hero('iam3')} iam4={hero('iam4')} btn1={hero('btn.hm')} btn2={hero('btn.dcv')} descript={hero('descript')}/>
           <AboutSection abtme={aboutme('abtme')} descript={aboutme('descript')} education={education} certification={certifications}/>
           <Experience/>
+          <Contact/>
         </div>
        
       </main>

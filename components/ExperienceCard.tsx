@@ -1,7 +1,7 @@
 import Link from "next/link"
 import React from "react"
 
-import { CodeBracketIcon, EyeIcon } from "@heroicons/react/24/outline"
+import { CodeBracketIcon } from "@heroicons/react/24/outline"
 import { ExperienceInfo } from "./ExperienceInfo"
 
 interface TextProps{

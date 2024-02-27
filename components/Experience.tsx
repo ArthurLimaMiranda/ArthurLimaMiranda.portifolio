@@ -38,7 +38,6 @@ import retif4 from "../public/assets/projetoRetificador/projRetif4.jpg"
 
 import qa from "../public/assets/quaseAcademico.png"
 import { ExperienceCard } from "./ExperienceCard";
-import exp from "constants";
 
 interface TextProps{
 }

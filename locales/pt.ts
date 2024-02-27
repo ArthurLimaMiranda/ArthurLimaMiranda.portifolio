@@ -59,7 +59,7 @@ export default{
         ],
         "oppa": [
             "Analisei os gastos públicos do governo federal brasileiro relacionados ao meio ambiente utilizando R e RStudio para coletar, filtrar e visualizar, por meio de gráficos, a evolução dos gastos ambientais de 2008 a 2021.",
-            ""
+            "-"
         ],
         "c4": [
             "Conecta 4",
@@ -84,5 +84,9 @@ export default{
             "Desenvolvi um aplicativo em Java Swing para gerar e gerenciar o horário das aulas dos professores do IFPE durante a semana",
             "Armazenei os arquivos das aulas de cada professor em um arquivo CSV"
         ]
-    }
+    },
+    "contact": {
+        "connect": "Vamos conversar",
+        "iam": "Estou procurando novas oportunidades, minha caixa de entrada está sempre aberta. Se você tem uma pergunta ou só quer dizer oi, farei o meu melhor para responder! Meu e-mail de contato é o 'arthur.limam@upe.br'",
+    },
 } as const

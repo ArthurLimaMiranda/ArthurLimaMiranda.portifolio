@@ -2,8 +2,10 @@
 import React from "react"
 import Image from "next/image"
 import hero_image from "../public/assets/hero-image.png"
+import { useCurrentLocale } from '../locales/client'
 
 import { TypeAnimation } from 'react-type-animation';
+import Link from "next/link";
 
 interface TextProps{
   hello: string,
@@ -16,8 +18,26 @@ interface TextProps{
   descript: string
 }
 
-
 export function HeroSection(props:TextProps){  
+
+  const currentLocale = useCurrentLocale()
+
+  function handleDownload() {
+    const link = document.createElement('a');
+    if (currentLocale == 'en'){
+      link.href = "/assets/resumes/Arthur_Miranda_Resume.pdf";
+      link.download = 'Arthur_Miranda_Resume.pdf';
+    }
+
+    else{
+      link.href = "/assets/resumes/Arthur_Miranda_Curriculo.pdf";
+      link.download = 'Arthur_Miranda_Curriculo.pdf';
+    } 
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+
   return(
     <section>
       <div className="grid grid-cols-1 sm:grid-cols-12 sm:gap-x-16">
@@ -49,8 +69,8 @@ export function HeroSection(props:TextProps){
           </p>
 
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black">{props.btn1}</button>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br hover:bg-slate-800 text-white border border-white mt-3">{props.btn2}</button>
+            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-white hover:bg-slate-200 text-black"><Link href="#contato">{props.btn1}</Link></button>
+            <button onClick={handleDownload} className="px-6 py-3 w-full sm:w-fit rounded-full bg-gradient-to-br hover:bg-slate-800 text-white border border-white mt-3">{props.btn2}</button>
           </div>
         </div>
 
